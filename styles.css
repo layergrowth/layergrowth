@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 10vw; /* Start with a size relative to viewport width */
+    margin-bottom: 20px;
+}
+
+button {
+    background: none;
+    border: 2px solid #42E9FA;
+    border-radius: 25px;
+    color: #42E9FA;
+    padding: 10px 20px;
+    margin: 20px 0 0;
+    font-size: 4vw; /* Relative to viewport width */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #42E9FA;
+    color: black;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#main-text::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+    color: #42E9FA;
+}
+
+@media(min-width: 768px) {
+    h1 {
+        font-size: 8vw; /* Adjust font size for larger screens */
+    }
+
+    button {
+        font-size: 2vw; /* Adjust button size for larger screens */
+    }
+}
+
+@media(min-width: 1024px) {
+    h1 {
+        font-size: 6vw; /* Further adjustment for even larger screens */
+    }
+
+    button {
+        font-size: 1.5vw; /* Further adjustment for even larger screens */
+    }
+}
