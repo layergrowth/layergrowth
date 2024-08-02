@@ -8,7 +8,7 @@ body {
     align-items: center;
     background-color: black;
     color: white;
-    font-family: 'Space Grotesk', Arial, sans-serif; /* Ensure correct font */
+    font-family: 'Space Grotesk', Arial, sans-serif; /* Font family */
     text-align: center;
     overflow: hidden;
 }
@@ -40,6 +40,7 @@ button {
     padding: 10px 20px;
     margin: 20px 0 0;
     font-size: 4vw; /* Relative to viewport width */
+    font-family: 'Space Grotesk', Arial, sans-serif; /* Ensure button font */
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
