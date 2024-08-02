@@ -7,8 +7,8 @@ body {
     justify-content: center;
     align-items: center;
     background-color: black;
-    color: white;
-    font-family: 'Space Grotesk', Arial, sans-serif; /* Font family */
+    color: #424242; /* Updated text color throughout */
+    font-family: 'Space Grotesk', Arial, sans-serif;
     text-align: center;
     overflow: hidden;
 }
@@ -26,10 +26,12 @@ h1 {
     font-size: 10vw; /* Start with a size relative to viewport width */
     margin-bottom: 20px;
     line-height: 1.49; /* Line height for better readability */
+    white-space: nowrap; /* Ensure "wayne mansion" wraps to a new line */
 }
 
 .highlight {
-    color: #424242; /* Highlight color for "wayne mansion" */
+    display: block; /* Ensures "wayne mansion" moves to a new line */
+    color: #424242; /* Updated color */
 }
 
 button {
@@ -56,6 +58,7 @@ button:hover {
     white-space: nowrap; /* Prevents text wrapping */
     border-right: 0.15em solid #424242; /* Blinking cursor color */
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    color: #424242; /* Ensure typewriter text color */
 }
 
 @keyframes typing {

@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
     const mainText = document.getElementById('main-text');
-    mainText.innerHTML = mainText.innerHTML.replace(
-        "wayne mansion",
-        "<span class='highlight'>wayne mansion</span>"
-    );
     typeWriter(mainText);
 });
 
