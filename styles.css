@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
 body {
     margin: 0;
     height: 100vh;
@@ -6,7 +8,7 @@ body {
     align-items: center;
     background-color: black;
     color: white;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Space Grotesk', Arial, sans-serif;
     text-align: center;
     overflow: hidden;
 }
@@ -23,13 +25,19 @@ body {
 h1 {
     font-size: 10vw; /* Start with a size relative to viewport width */
     margin-bottom: 20px;
+    letter-spacing: -0.42em; /* Adjusted letter spacing */
+    line-height: 1.49; /* Adjusted line spacing */
+}
+
+.highlight {
+    color: #424242; /* Color for "wayne mansion" */
 }
 
 button {
     background: none;
-    border: 2px solid #42E9FA;
+    border: 2px solid #424242;
     border-radius: 25px;
-    color: #42E9FA;
+    color: #424242;
     padding: 10px 20px;
     margin: 20px 0 0;
     font-size: 4vw; /* Relative to viewport width */
@@ -38,7 +46,7 @@ button {
 }
 
 button:hover {
-    background-color: #42E9FA;
+    background-color: #424242;
     color: black;
 }
 
@@ -51,7 +59,7 @@ button:hover {
 #main-text::after {
     content: '|';
     animation: blink 1s step-end infinite;
-    color: #42E9FA;
+    color: #424242; /* Blinking cursor color */
 }
 
 @media(min-width: 768px) {

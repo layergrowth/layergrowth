@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
-    typeWriter(document.getElementById('main-text').textContent, 0, 'main-text');
+    typeWriter(document.getElementById('main-text').innerText, 0, 'main-text');
 });
 
 function typeWriter(text, i, elementId) {
     if (i < text.length) {
-        document.getElementById(elementId).textContent = text.substring(0, i + 1);
+        document.getElementById(elementId).innerText = text.substring(0, i + 1);
         setTimeout(() => typeWriter(text, i + 1, elementId), 50);
     }
 }
