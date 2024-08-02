@@ -8,7 +8,7 @@ body {
     align-items: center;
     background-color: black;
     color: white;
-    font-family: 'Space Grotesk', Arial, sans-serif; /* Updated font */
+    font-family: 'Space Grotesk', Arial, sans-serif; /* Ensure correct font */
     text-align: center;
     overflow: hidden;
 }
@@ -49,7 +49,7 @@ button:hover {
     color: black;
 }
 
-.typewriter h1 {
+.typewriter {
     display: inline-block;
     overflow: hidden; /* Ensures the cursor does not overflow */
     white-space: nowrap; /* Prevents text wrapping */
