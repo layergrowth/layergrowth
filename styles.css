@@ -50,16 +50,22 @@ button:hover {
     color: black;
 }
 
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
+.typewriter h1 {
+    display: inline-block;
+    overflow: hidden; /* Ensures the cursor does not overflow */
+    white-space: nowrap; /* Prevents text wrapping */
+    border-right: 0.15em solid #424242; /* Blinking cursor color */
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-#main-text::after {
-    content: '|';
-    animation: blink 1s step-end infinite;
-    color: #424242; /* Blinking cursor color */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #424242; } /* Blinking cursor color */
 }
 
 @media(min-width: 768px) {

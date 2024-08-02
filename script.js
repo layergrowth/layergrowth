@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    typeWriter(document.getElementById('main-text').innerText, 0, 'main-text');
+    const mainText = document.getElementById('main-text');
+    mainText.innerHTML = mainText.innerHTML.replace(
+        "wayne mansion",
+        "<span class='highlight'>wayne mansion</span>"
+    );
+    typeWriter(mainText);
 });
 
-function typeWriter(text, i, elementId) {
-    if (i < text.length) {
-        document.getElementById(elementId).innerText = text.substring(0, i + 1);
-        setTimeout(() => typeWriter(text, i + 1, elementId), 50);
-    }
+function typeWriter(element) {
+    element.classList.add("typewriter");
 }
 
 document.getElementById('searchButton').addEventListener('click', function() {
