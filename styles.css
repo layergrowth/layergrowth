@@ -8,7 +8,7 @@ body {
     align-items: center;
     background-color: black;
     color: white;
-    font-family: 'Space Grotesk', Arial, sans-serif;
+    font-family: 'Space Grotesk', Arial, sans-serif; /* Updated font */
     text-align: center;
     overflow: hidden;
 }
@@ -30,14 +30,14 @@ h1 {
 }
 
 .highlight {
-    color: #424242; /* Color for "wayne mansion" */
+    color: #424242; /* Updated highlight color for "wayne mansion" */
 }
 
 button {
     background: none;
-    border: 2px solid #424242;
+    border: 2px solid #424242; /* Updated button border color */
     border-radius: 25px;
-    color: #424242;
+    color: #424242; /* Updated button text color */
     padding: 10px 20px;
     margin: 20px 0 0;
     font-size: 4vw; /* Relative to viewport width */
@@ -54,7 +54,7 @@ button:hover {
     display: inline-block;
     overflow: hidden; /* Ensures the cursor does not overflow */
     white-space: nowrap; /* Prevents text wrapping */
-    border-right: 0.15em solid #424242; /* Blinking cursor color */
+    border-right: 0.15em solid #424242; /* Updated blinking cursor color */
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
@@ -65,7 +65,7 @@ button:hover {
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #424242; } /* Blinking cursor color */
+    50% { border-color: #424242; } /* Updated blinking cursor color */
 }
 
 @media(min-width: 768px) {
